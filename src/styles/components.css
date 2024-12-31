@@ -1,0 +1,33 @@
+.carousel-container {
+    @apply relative w-full overflow-hidden;
+  }
+  
+  .carousel-items {
+    @apply flex transition-transform duration-300;
+  }
+  
+  .carousel-item {
+    @apply w-full flex-shrink-0 py-4 bg-cblue place-items-center;
+  }
+  
+  .carousel-content {
+    @apply pt-16 flex flex-row bg-cgray w-full justify-center;
+  }
+  
+  .carousel-image {
+    @apply lg:h-80 md:h-60 h-40 lg:mr-8 md:mr-6 mr-4 rounded-t-2xl border-l-8 border-cblue;
+  }
+  
+  .carousel-text {
+    @apply flex flex-col justify-end md:pb-6 pb-4;
+  }
+  
+  .carousel-title {
+    @apply lg:text-7xl md:text-5xl text-3xl text-cblue md:mb-2 font-manrope font-bold;
+  }
+  
+  .carousel-status,
+  .carousel-loc,
+  .carousel-firstseen {
+    @apply flex flex-row lg:text-lg md:text-base text-xs text-gray-600 font-manrope ml-1 font-medium;
+  }

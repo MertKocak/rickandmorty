@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rick and Morty Characters</title>
+  <script type="module" src="src/js/api.js"></script>
+  <link href="src/styles/tailwind.css" rel="stylesheet">
+  <link href="src/styles/components.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,600;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-cbg font-sans">
+    <!-- Carousel Container -->
+    <div class="carousel-container">
+      <div class="carousel-items" id="carouselItems">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <img id="carouselImage0" src="" class="carousel-image" alt="Slide 1">
+            <div class="carousel-text">
+              <div id="carouselName0" class="carousel-title"></div>
+              <div id="carouselStatus0" class="carousel-status"></div>
+              <div id="carouselLoc0" class="carousel-loc"></div>
+              <div id="carouselFirstSeen0" class="carousel-firstseen"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <img id="carouselImage1" src="" class="carousel-image" alt="Slide 1">
+            <div class="carousel-text">
+              <div id="carouselName1" class="carousel-title"></div>
+              <div id="carouselStatus1" class="carousel-status"></div>
+              <div id="carouselLoc1" class="carousel-loc"></div>
+              <div id="carouselFirstSeen1" class="carousel-firstseen"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item">
+          <div class="carousel-content">
+            <img id="carouselImage2" src="" class="carousel-image" alt="Slide 1">
+            <div class="carousel-text">
+              <div id="carouselName2" class="carousel-title"></div>
+              <div id="carouselStatus2" class="carousel-status"></div>
+              <div id="carouselLoc2" class="carousel-loc"></div>
+              <div id="carouselFirstSeen2" class="carousel-firstseen"></div>
+            </div>
+          </div>
+        </div>
+         <!-- Carousel Item 4 -->
+         <div class="carousel-item">
+          <div class="carousel-content">
+            <img id="carouselImage3" src="" class="carousel-image" alt="Slide 1">
+            <div class="carousel-text">
+              <div id="carouselName3" class="carousel-title"></div>
+              <div id="carouselStatus3" class="carousel-status"></div>
+              <div id="carouselLoc3" class="carousel-loc"></div>
+              <div id="carouselFirstSeen3" class="carousel-firstseen"></div>
+            </div>
+          </div>
+        </div>
+         <!-- Carousel Item 5 -->
+         <div class="carousel-item">
+          <div class="carousel-content">
+            <img id="carouselImage4" src="" class="carousel-image" alt="Slide 1">
+            <div class="carousel-text">
+              <div id="carouselName4" class="carousel-title"></div>
+              <div id="carouselStatus4" class="carousel-status"></div>
+              <div id="carouselLoc4" class="carousel-loc"></div>
+              <div id="carouselFirstSeen4" class="carousel-firstseen"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- Navigation Buttons -->
+    <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 p-4 bg-opacity-0 font-manrope text-cblue lg:text-7xl md:text-4xl text-xl">
+      ‹
+    </button>
+    <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 p-4 bg-opacity-0 font-manrope text-cblue lg:text-7xl md:text-4xl text-xl">
+      ›
+    </button>
+  </div>
+
+  <div id="modal-container" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-cgray rounded-lg w-11/12 md:w-1/2 p-6 relative">
+      <button id="close-modal" class="absolute top-2 right-4 text-cblack hover:text-cblue font-manrope text-2xl">&times;</button>
+      <div id="modal-content" class="flex flex-col">
+        <!-- Dinamik içerik buraya eklenecek -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Other Characters -->
+  <div class="px-24">
+    <h1 class="my-4 lg:text-base md:text-sm text-xs text-gray-600 font-manrope font-semibold">Other Characters</h1>
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-8" id="user-info">
+    </div>
+  </div>
+  
+  <!-- JavaScript -->
+  <script src="src/js/carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"></script>
+
+  
+</body>
+</html>
