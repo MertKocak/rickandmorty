@@ -7,7 +7,7 @@
   }
   
   .carousel-item {
-    @apply w-full flex-shrink-0 py-4 bg-cblue place-items-center;
+    @apply w-full flex-shrink-0 sm:py-4 py-2 bg-cblue place-items-center;
   }
   
   .carousel-content {
@@ -15,19 +15,19 @@
   }
   
   .carousel-image {
-    @apply lg:h-80 md:h-60 h-40 lg:mr-8 md:mr-6 mr-4 rounded-t-2xl border-l-8 border-cblue;
+    @apply lg:h-80 md:h-60 sm:h-40 h-20 lg:mr-8 md:mr-6 sm:mr-4 mr-2 rounded-t-2xl border-l-8 border-cblue;
   }
   
   .carousel-text {
-    @apply flex flex-col justify-end md:pb-6 pb-4;
+    @apply flex flex-col justify-end md:pb-6 sm:pb-4;
   }
   
   .carousel-title {
-    @apply lg:text-7xl md:text-5xl text-3xl text-cblue md:mb-2 font-manrope font-bold;
+    @apply lg:text-7xl md:text-5xl sm:text-3xl text-sm text-cblue md:mb-2 font-manrope font-bold;
   }
   
   .carousel-status,
   .carousel-loc,
   .carousel-firstseen {
-    @apply flex flex-row lg:text-lg md:text-base text-xs text-gray-600 font-manrope ml-1 font-medium;
+    @apply flex flex-row lg:text-lg md:text-base sm:text-xs text-[10px] text-gray-600 font-manrope sm:ml-1 font-medium;
   }
